@@ -1,6 +1,6 @@
 const express = require('express');
 const Book = require('../models/book');
-const router = express.Route();
+const router = express.Router();
 
 //Obtener todos los libros
 router.get('/books', async (req, res) => {
