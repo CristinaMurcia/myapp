@@ -10,6 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', bookRoutes);
 
+app.get('/api', (req, res)=> {
+    res.send("<h1>Hola caracola</h1>");
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('Server is running on port ${PORT}');
